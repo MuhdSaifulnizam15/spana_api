@@ -93,7 +93,9 @@ src\
  |--app.js          # Express app
  |--server.js        # App entry point
 ```
-
+## Api Documentation
+### Postman Link
+[Postman](https://www.getpostman.com/collections/c189eb380a6250cc2af0) - Updated on 16 March 2022
 ### API Endpoints
 
 List of available routes:
