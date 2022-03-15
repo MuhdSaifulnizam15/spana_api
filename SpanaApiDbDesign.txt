@@ -1,0 +1,118 @@
+// City 
+{
+    "state": ObjecctId,
+    "name": String,
+}
+
+// State 
+{
+    "name": String,
+}
+
+// Token
+{
+    "token": String,
+    "user": ObjectId,
+    "type": String,
+    "expires": String,
+    "blacklisted": Boolean,
+}
+
+// User
+{
+    "email": String,
+    "password": String,
+    "first_name": String,
+    "last_name": String,
+    "role": String,
+    "active": Boolean,
+    "image": String,
+
+    // TO BE ADDED
+    "birth_date": String,
+    "gender": String,
+    "phone_number": String,
+    "address": Address,
+    "city": City,
+    "postal_code": String,
+    "state": State,
+    "country": String,
+    "profile_pic": String,
+}
+
+
+=============== TO BE ADDED =====================
+
+// Vehicle
+{
+    "make": Make,
+    "year": String,
+    "model": String,
+    "variant": String,
+    "mileage": Number,
+    "color": String,
+    "plate_num": String,
+    "cc": String,
+    "transmission": String,
+    "image": String,
+    "rim_size": Number,
+    "tyre_size": String,
+    "roadtax": {
+        "provider": String,
+        "expiry_date": Date,
+    },
+    type: VehicleType,
+}
+
+// Parts
+{
+    "name": String,
+    "price": String,
+    "section": String,
+}
+
+// VehicleType
+{
+    "name": String,
+    "icon": String,
+    "keyword": String,
+}
+
+// Make
+{
+    "name": String,
+}
+
+// Section
+{
+    "name": String
+}
+
+// History
+{
+    "mileage": String,
+    "workshop": String,
+    "description": String,
+    "amount": String,
+    "date": Date,
+}
+
+// Upcoming
+{
+    "mileage": String,
+    "workshop': String,
+    "description": String,
+    "estimation": String,
+    "date": Date,
+    "list_of_service": [ServiceType]
+}
+
+// ServiceType
+{
+    "name": String,
+    "is_optional": Boolean,
+    "is_compulsory": Boolean,
+    "inspection": String,
+    "description": String,
+    "section": String,
+}
