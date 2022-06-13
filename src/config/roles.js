@@ -6,9 +6,10 @@ const getPermissionList = [
   'getUser', 'getUsers',
   'getState', 'getStates',
   'getCity', 'getCitys', 'getCityByState',
+  'getVehicles'
 ];
 
-const customerPermissionList = [];
+const customerPermissionList = ['manageVehicles'];
 const vendorManagePermissionList = [];
 const adminManagePermissionList = ['manageUsers', 'manageState', 'manageCity'];
 
