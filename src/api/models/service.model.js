@@ -31,7 +31,15 @@ const serviceSchema = mongoose.Schema({
   },
   image_url: {
     type: String,
-  }
+  },
+  hourly_time_slot: {
+    type: String,
+    default: 1
+  },
+  hourly_time_slot_limit: {
+    type: String,
+    default: 1
+  },
 });
 
 serviceSchema.plugin(toJSON);
