@@ -68,10 +68,9 @@ const updateWorkshopById = async (workshopId, updateBody) => {
   }
 
   const address = await getAddressById(workshop.address);
-  console.log('address', address);
-
   await address.save();
   updateBody.address = address._id;
+
   Object.assign(workshop, updateBody);
   await workshop.save();
   return workshop;
@@ -87,6 +86,9 @@ const deleteWorkshopById = async (workshopId) => {
   if (!workshop) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Workshop not found');
   }
+
+  const address = await getAddressById(workshop.address);
+  await address.remove();
   await workshop.remove();
   return workshop;
 };
