@@ -5,4 +5,5 @@ module.exports = {
   stateService: require('./state.service'),
   tokenService: require('./token.service'),
   userService: require('./user.service'),
+  vehicleService: require('./vehicle.service'),
 };
