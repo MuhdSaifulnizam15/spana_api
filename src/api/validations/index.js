@@ -4,4 +4,5 @@ module.exports = {
   stateValidation: require('./state.validation'),
   userValidation: require('./user.validation'),
   vehicleValidation: require('./vehicle.validation'),
+  workshopValidation: require('./workshop.validation'),
 };

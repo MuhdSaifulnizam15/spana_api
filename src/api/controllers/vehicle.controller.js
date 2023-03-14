@@ -10,7 +10,7 @@ const createVehicle = catchAsync(async (req, res) => {
 });
 
 const getVehicles = catchAsync(async (req, res) => {
-  const filter = pick(req.query, ['name', 'programme_module', 'batch', 'is_active']);
+  const filter = pick(req.query, ['name']);
   const options = pick(req.query, ['sortBy', 'populate', 'limit', 'page']);
   const result = await vehicleService.queryVehicles(filter, options);
   res.send({ status: true, code: '0000', result });

@@ -17,8 +17,15 @@ const paymentMethod = {
   creditCard: 'CREDIT CARD',
 }
 
+const operationHourStatus = {
+  open: 'OPEN',
+  close: 'CLOSED',
+  break: 'BREAK',
+}
+
 module.exports = {
   priority,
   paymentStatus,
   paymentMethod,
+  operationHourStatus,
 };

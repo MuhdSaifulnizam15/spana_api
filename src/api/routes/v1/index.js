@@ -5,6 +5,7 @@ const cityRoutes = require('./city.route');
 const stateRoutes = require('./state.route');
 const userRoutes = require('./user.route');
 const vehicleRoutes = require('./vehicle.route');
+const workshopRoutes = require('./workshop.route');
 
 const router = express.Router();
 
@@ -33,6 +34,10 @@ const defaultRoutes = [
   {
     path: '/vehicles',
     route: vehicleRoutes,
+  },
+  {
+    path: '/workshops',
+    route: workshopRoutes,
   },
 ];
 

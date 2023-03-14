@@ -6,4 +6,5 @@ module.exports = {
   tokenService: require('./token.service'),
   userService: require('./user.service'),
   vehicleService: require('./vehicle.service'),
+  workshopService: require('./workshop.service'),
 };
