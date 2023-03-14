@@ -6,7 +6,7 @@ const createCity = async (userBody) => {
   if (await City.isNameTaken(userBody.name)) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'city already exist.');
   }
-  const state = await State.find({ state_id: userBody.state_id });
+  const state = await State.find({ _id: userBody.state_id });
   if (!state) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'state not found.');
   }

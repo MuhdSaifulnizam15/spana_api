@@ -3,7 +3,7 @@ const mongoosePaginate = require('mongoose-paginate-v2');
 const { toJSON } = require('./plugins');
 
 const citySchema = mongoose.Schema({
-  state: {
+  state_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'State',
     required: true

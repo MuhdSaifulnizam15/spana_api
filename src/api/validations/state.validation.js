@@ -2,7 +2,6 @@ const Joi = require('joi');
 
 const createState = {
     body: Joi.object().keys({
-        state_id: Joi.number().required(),
         name: Joi.string().required(),
     }),
 };
