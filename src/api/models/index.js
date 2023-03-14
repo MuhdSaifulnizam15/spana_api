@@ -6,4 +6,5 @@ module.exports = {
   Vehicle: require('./vehicle.model'),
   Address: require('./address.model'),
   Workshop: require('./workshop.model'),
+  Service: require('./service.model'),
 };

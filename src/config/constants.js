@@ -23,9 +23,16 @@ const operationHourStatus = {
   break: 'BREAK',
 }
 
+const serviceStatus = {
+  available: 'AVAILABLE',
+  unavailable: 'UNAVAILABLE',
+  limited: 'LIMITED',
+}
+
 module.exports = {
   priority,
   paymentStatus,
   paymentMethod,
   operationHourStatus,
+  serviceStatus,
 };

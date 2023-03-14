@@ -7,4 +7,5 @@ module.exports = {
   userService: require('./user.service'),
   vehicleService: require('./vehicle.service'),
   workshopService: require('./workshop.service'),
+  serviceService: require('./service.service'),
 };
