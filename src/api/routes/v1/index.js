@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 
 const authRoutes = require('./auth.route');
 const cityRoutes = require('./city.route');
@@ -7,6 +7,7 @@ const userRoutes = require('./user.route');
 const vehicleRoutes = require('./vehicle.route');
 const workshopRoutes = require('./workshop.route');
 const serviceRoutes = require('./service.route');
+const appointmentRoutes = require('./appointment.route');
 
 const router = express.Router();
 
@@ -40,9 +41,13 @@ const defaultRoutes = [
     path: '/workshops',
     route: workshopRoutes,
   },
-    {
+  {
     path: '/services',
     route: serviceRoutes,
+  },
+  {
+    path: '/appointments',
+    route: appointmentRoutes,
   },
 ];
 

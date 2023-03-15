@@ -7,4 +7,5 @@ module.exports = {
   Address: require('./address.model'),
   Workshop: require('./workshop.model'),
   Service: require('./service.model'),
+  Appointment: require('./appointment.model'),
 };

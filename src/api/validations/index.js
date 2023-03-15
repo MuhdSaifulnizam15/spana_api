@@ -6,4 +6,5 @@ module.exports = {
   vehicleValidation: require('./vehicle.validation'),
   workshopValidation: require('./workshop.validation'),
   serviceValidation: require('./service.validation'),
+  appointmentValidation: require('./appointment.validation'),
 };

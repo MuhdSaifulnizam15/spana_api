@@ -8,4 +8,5 @@ module.exports = {
   vehicleService: require('./vehicle.service'),
   workshopService: require('./workshop.service'),
   serviceService: require('./service.service'),
+  appointmentService: require('./appointment.service'),
 };

@@ -29,10 +29,19 @@ const serviceStatus = {
   limited: 'LIMITED',
 }
 
+const appointmentStatus = {
+  pendingApproval: 'PENDING APPROVAL',
+  upcoming: 'UPCOMING',
+  ongoing: 'ONGOING',
+  pendingPayment: 'PENDING FOR PAYMENT',
+  completed: 'COMPLETED',
+}
+
 module.exports = {
   priority,
   paymentStatus,
   paymentMethod,
   operationHourStatus,
   serviceStatus,
+  appointmentStatus,
 };

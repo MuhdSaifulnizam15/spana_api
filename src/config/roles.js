@@ -9,10 +9,11 @@ const getPermissionList = [
   'getVehicle', 'getVehicles',
   'getWorkshop', 'getWorkshops',
   'getService', 'getServices',
+  'getAppointment', 'getAppointments',
 ];
 
 const customerPermissionList = [];
-const vendorManagePermissionList = ['manageVehicles', 'manageServices'];
+const vendorManagePermissionList = ['manageVehicles', 'manageServices', 'manageAppointments'];
 const adminManagePermissionList = ['manageUsers', 'manageState', 'manageCity', 'manageWorkshops'];
 
 roleRights.set(roles[0], customerPermissionList.concat(getPermissionList));
