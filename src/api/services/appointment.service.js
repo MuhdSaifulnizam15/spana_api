@@ -45,7 +45,7 @@ const createAppointment = async (userBody) => {
 const queryAppointments = async (filter, options) => {
   console.log('filter', filter);
   console.log('options', options);
-  options.populate = ["customer", "service", "vehicle"];
+  options.populate = ['customer', 'service', 'vehicle'];
   const appointments = await Appointment.paginate(filter, options);
   return appointments;
 };
@@ -57,7 +57,7 @@ const queryAppointments = async (filter, options) => {
  */
 const getAppointmentById = async (id) => {
   const app = Appointment.findById(id);
-  return app.populate(["customer", "service", "vehicle"])
+  return app.populate(['customer', 'service', 'vehicle']);
 };
 
 /**
